@@ -1,9 +1,12 @@
-____________________________________________________
-PARA TER ACESSO 
-DEVEM BAIXAR A PASTA .ZIP
-----------------------------------------------------
+_______________________________________________________________________________
+------ PARA TER ACESSO -------
+1. DEVEM BAIXAR A PASTA .ZIP
+2. DEVEM COLOCAR A PASTA NO WWW, OU HTDOCS etc... do vosso WAMP, XAMPP etc...
+3. Automaticamente se for aberto no WAMP, deverá ser aberto o index.php
+-------------------------------------------------------------------------------
 
-
+ACERCA DO  SITE
+_______________________________________________________________________________
 Estrutura Básica do Site de Horóscopo e Signos
 1. Página Principal
 A página principal pode ter uma introdução sobre astrologia e uma breve descrição sobre os signos do zodíaco.

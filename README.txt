@@ -1,3 +1,9 @@
+____________________________________________________
+PARA TER ACESSO 
+DEVEM BAIXAR A PASTA .ZIP
+----------------------------------------------------
+
+
 Estrutura Básica do Site de Horóscopo e Signos
 1. Página Principal
 A página principal pode ter uma introdução sobre astrologia e uma breve descrição sobre os signos do zodíaco.

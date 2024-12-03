@@ -30,7 +30,8 @@
         }
 
         .wallpaperInicio {
-            background-image: url(astrologia.jpg);
+            background-position: top;
+            background-image: url(imagemAstrologiaPiPiPo.png);
         }
 
         ul,
@@ -73,9 +74,9 @@
         <ol>
             <br>
             <li>
-                <h3>Os Signos do Zodíaco</h3>
+                <h3>Os <a href="signos.php" style="font-family: 'Cinzel';">Signos</a> do Zodíaco</h3>
 
-                <p>São 12 signos associados às constelações pelas quais o Sol "passa" ao longo do ano. Cada signo possui características únicas que influenciam a personalidade.</p><br>
+                <p>São 12 <a href="signos.php">signos</a> associados às constelações pelas quais o Sol "passa" ao longo do ano. Cada signo possui características únicas que influenciam a personalidade.</p><br>
                 <ul>
                     <li>Fogo: Áries, Leão, Sagitário – impulsivos, entusiásticos, criativos.</li><br>
                     <li>Terra: Touro, Virgem, Capricórnio – práticos, estáveis, disciplinados.</li><br>
@@ -132,7 +133,7 @@
         <h2>Astrologia em Diferentes Culturas</h2><br>
         <ul>
             <li>Astrologia Védica: Baseada no zodíaco sideral, enfatiza o karma e o dharma.</li>
-            <li>Astrologia Chinesa: Os 12 signos são baseados no ano de nascimento, associados a animais e elementos como Madeira, Fogo, Terra, Metal e Água.</li>
+            <li>Astrologia Chinesa: Os 12 <a href="signos.php">Signos</a> são baseados no ano de nascimento, associados a animais e elementos como Madeira, Fogo, Terra, Metal e Água.</li>
             <li>Astrologia Maia e Astecas: Complexos calendários astrológicos ligados a ciclos espirituais e cósmicos.</li>
         </ul>
         <br>

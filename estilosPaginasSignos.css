@@ -1,0 +1,18 @@
+.signoDescricaoFer {
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 15rem;
+    display: flex;
+}
+
+.signoDescricaoFer div {
+    text-align: justify;
+    width: 48%;
+    padding: 0;
+    margin: 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}

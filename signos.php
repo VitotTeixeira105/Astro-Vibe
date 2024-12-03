@@ -43,11 +43,20 @@
     .divSigno {
         height: fit-content;
     }
+
+    .descubraMais {
+        border-radius: 20px;
+        background-color: #6A0DAD;
+        color: white;
+        padding: 15px;
+        font-size: 15px;
+        border: none;
+    }
 </style>
 
 <body>
     <div id="div-header"></div>
-    
+
     <div class="wallpaperInicio"></div>
 
     <div class="div-title-site">
@@ -66,32 +75,34 @@
             <br>
             <p>É importante notar que a astrologia não é uma ciência, e a sua eficácia e validade são objeto de debate. Para muitos, contudo, ela tem valor simbólico e psicológico, proporcionando uma linguagem para compreender o comportamento humano e as dinâmicas emocionais. Ao explorar os signos do zodíaco, os indivíduos podem ganhar uma maior compreensão de si mesmos e do mundo ao seu redor, promovendo uma visão mais introspectiva e ponderada das suas ações e escolhas.</p>
             <br>
-            <a onmouseenter="mudarOpacidade(0.5, 'saibaMaisInformacao')" onmouseleave="mudarOpacidade(1, 'saibaMaisInformacao')" style="color: #F2E94E;" id="saibaMaisInformacao" href="#">Saiba Mais <span class="mdi mdi-arrow-right"></span></a>
+            <a onmouseenter="mudarOpacidade(0.5, 'saibaMaisInformacao')" onmouseleave="mudarOpacidade(1, 'saibaMaisInformacao')" style="color: #F2E94E;" id="saibaMaisInformacao" href="astrologia.php">Saiba Mais <span class="mdi mdi-arrow-right"></span></a>
         </div>
     </div>
+
+
 
     <div class="boxSignosWrapper">
         <?php
         $signosZodiaco = array(
-            array('nome' => 'Áries',       'nomeBox' => 'boxaries',       'planeta' => 'Marte',    'elemento' => 'Fogo',  'image' => 'ariesLogo.webp',       'qualidade' => 'Cardinal', 'mesComeca' => 'Março',     'mesAcaba' => 'Abril'),
-            array('nome' => 'Touro',       'nomeBox' => 'boxtouro',       'planeta' => 'Vênus',    'elemento' => 'Terra', 'image' => 'touroLogo.webp',       'qualidade' => 'Fixo',     'mesComeca' => 'Abril',     'mesAcaba' => 'Maio'),
-            array('nome' => 'Gêmeos',      'nomeBox' => 'boxgemeos',      'planeta' => 'Mercúrio', 'elemento' => 'Ar',    'image' => 'gemeosLogo.webp',      'qualidade' => 'Mutável',  'mesComeca' => 'Maio',      'mesAcaba' => 'Junho'),
-            array('nome' => 'Câncer',      'nomeBox' => 'boxcancer',      'planeta' => 'Lua',      'elemento' => 'Água',  'image' => 'cancerLogo.webp',      'qualidade' => 'Cardinal', 'mesComeca' => 'Junho',     'mesAcaba' => 'Julho'),
-            array('nome' => 'Leão',        'nomeBox' => 'boxleao',        'planeta' => 'Sol',      'elemento' => 'Fogo',  'image' => 'leaoLogo.webp',        'qualidade' => 'Fixo',     'mesComeca' => 'Julho',     'mesAcaba' => 'Agosto'),
-            array('nome' => 'Virgem',      'nomeBox' => 'boxvirgem',      'planeta' => 'Mercúrio', 'elemento' => 'Terra', 'image' => 'virgemLogo.webp',      'qualidade' => 'Mutável',  'mesComeca' => 'Agosto',    'mesAcaba' => 'Setembro'),
-            array('nome' => 'Libra',       'nomeBox' => 'boxlibra',       'planeta' => 'Vênus',    'elemento' => 'Terra', 'image' => 'libraLogo.webp',       'qualidade' => 'Cardinal', 'mesComeca' => 'Setembro',  'mesAcaba' => 'Outubro'),
-            array('nome' => 'Escorpião',   'nomeBox' => 'boxescorpiao',   'planeta' => 'Plutão',   'elemento' => 'Água',  'image' => 'escorpiaoLogo.webp',   'qualidade' => 'Fixo',     'mesComeca' => 'Outubro',   'mesAcaba' => 'Novembro'),
-            array('nome' => 'Sagitário',   'nomeBox' => 'boxsagitario',   'planeta' => 'Júpiter',  'elemento' => 'Fogo',  'image' => 'sagitarioLogo.webp',   'qualidade' => 'Mutável',  'mesComeca' => 'Novembro',  'mesAcaba' => 'Dezembro'),
-            array('nome' => 'Capricórnio', 'nomeBox' => 'boxcapricornio', 'planeta' => 'Saturno',  'elemento' => 'Terra', 'image' => 'capricornioLogo.webp', 'qualidade' => 'Cardinal', 'mesComeca' => 'Dezembro',  'mesAcaba' => 'Janeiro'),
-            array('nome' => 'Aquário',     'nomeBox' => 'boxaquario',     'planeta' => 'Urano',    'elemento' => 'Ar',    'image' => 'aquarioLogo.webp',     'qualidade' => 'Fixo',     'mesComeca' => 'Janeiro',   'mesAcaba' => 'Fevereiro'),
-            array('nome' => 'Peixes',      'nomeBox' => 'boxpeixes',      'planeta' => 'Neptuno',  'elemento' => 'Água',  'image' => 'peixesLogo.webp',      'qualidade' => 'Mutável',  'mesComeca' => 'Fevereiro', 'mesAcaba' => 'Março')
+            array('nome' => 'Áries',       'nomeBox' => 'boxaries',       'planeta' => 'Marte',    'elemento' => 'Fogo',  'image' => 'ariesLogo.webp',       'qualidade' => 'Cardinal', 'mesComeca' => '21 / Março',     'mesAcaba' => '20 / Abril',     'pagina' => 'aries.php'),
+            array('nome' => 'Touro',       'nomeBox' => 'boxtouro',       'planeta' => 'Vênus',    'elemento' => 'Terra', 'image' => 'touroLogo.webp',       'qualidade' => 'Fixo',     'mesComeca' => '21 / Abril',     'mesAcaba' => '20 / Maio',      'pagina' => 'touro.php'),
+            array('nome' => 'Gêmeos',      'nomeBox' => 'boxgemeos',      'planeta' => 'Mercúrio', 'elemento' => 'Ar',    'image' => 'gemeosLogo.webp',      'qualidade' => 'Mutável',  'mesComeca' => '21 / Maio',      'mesAcaba' => '20 / Junho',     'pagina' => 'gemeos.php'),
+            array('nome' => 'Câncer',      'nomeBox' => 'boxcancer',      'planeta' => 'Lua',      'elemento' => 'Água',  'image' => 'cancerLogo.webp',      'qualidade' => 'Cardinal', 'mesComeca' => '21 / Junho',     'mesAcaba' => '21 / Julho',     'pagina' => 'cancer.php'),
+            array('nome' => 'Leão',        'nomeBox' => 'boxleao',        'planeta' => 'Sol',      'elemento' => 'Fogo',  'image' => 'leaoLogo.webp',        'qualidade' => 'Fixo',     'mesComeca' => '22 / Julho',     'mesAcaba' => '22 / Agosto',    'pagina' => 'leao.php'),
+            array('nome' => 'Virgem',      'nomeBox' => 'boxvirgem',      'planeta' => 'Mercúrio', 'elemento' => 'Terra', 'image' => 'virgemLogo.webp',      'qualidade' => 'Mutável',  'mesComeca' => '23 / Agosto',    'mesAcaba' => '22 / Setembro',  'pagina' => 'virgem.php'),
+            array('nome' => 'Libra',       'nomeBox' => 'boxlibra',       'planeta' => 'Vênus',    'elemento' => 'Terra', 'image' => 'libraLogo.webp',       'qualidade' => 'Cardinal', 'mesComeca' => '23 / Setembro',  'mesAcaba' => '22 / Outubro',   'pagina' => 'libra.php'),
+            array('nome' => 'Escorpião',   'nomeBox' => 'boxescorpiao',   'planeta' => 'Plutão',   'elemento' => 'Água',  'image' => 'escorpiaoLogo.webp',   'qualidade' => 'Fixo',     'mesComeca' => '23 / Outubro',   'mesAcaba' => '21 / Novembro',  'pagina' => 'escorpiao.php'),
+            array('nome' => 'Sagitário',   'nomeBox' => 'boxsagitario',   'planeta' => 'Júpiter',  'elemento' => 'Fogo',  'image' => 'sagitarioLogo.webp',   'qualidade' => 'Mutável',  'mesComeca' => '22 / Novembro',  'mesAcaba' => '21 / Dezembro',  'pagina' => 'sagitario.php'),
+            array('nome' => 'Capricórnio', 'nomeBox' => 'boxcapricornio', 'planeta' => 'Saturno',  'elemento' => 'Terra', 'image' => 'capricornioLogo.webp', 'qualidade' => 'Cardinal', 'mesComeca' => '22 / Dezembro',  'mesAcaba' => '20 / Janeiro',   'pagina' => 'capricornio.php'),
+            array('nome' => 'Aquário',     'nomeBox' => 'boxaquario',     'planeta' => 'Urano',    'elemento' => 'Ar',    'image' => 'aquarioLogo.webp',     'qualidade' => 'Fixo',     'mesComeca' => '21 / Janeiro',   'mesAcaba' => '19 / Fevereiro', 'pagina' => 'aquario.php'),
+            array('nome' => 'Peixes',      'nomeBox' => 'boxpeixes',      'planeta' => 'Neptuno',  'elemento' => 'Água',  'image' => 'peixesLogo.webp',      'qualidade' => 'Mutável',  'mesComeca' => '20 / Fevereiro', 'mesAcaba' => '20 / Março',     'pagina' => 'peixes.php')
         );
 
         $contador = 0;
-        $totalSignos = count($signosZodiaco);
+        $totalSignos = 12;
 
         while ($contador < $totalSignos) {
-           
+
             if ($contador % 3 == 0) {
                 echo '<div class="boxSignos">';
             }
@@ -109,6 +120,7 @@
             echo '<div><p><b>Elemento: </b>' . $detalhesSigno['elemento'] . '</p></div>';
             echo '<div><p><b>Qualidade: </b>' . $detalhesSigno['qualidade'] . '</p></div>';
             echo '<div><p><b>Meses: </b>' . $detalhesSigno['mesComeca'] . ' - ' . $detalhesSigno['mesAcaba'] . '</p></div>';
+            echo '<br><div><a href="' . $detalhesSigno['pagina'] . '"><button class="descubraMais">Descubra Mais</button></a></div><br>';
             echo '</div>';
             echo '</div>';
             echo '</div>';
@@ -120,6 +132,7 @@
             }
         }
         ?>
+
     </div>
 
     <div id="rodape"></div>
